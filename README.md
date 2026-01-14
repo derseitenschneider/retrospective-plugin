@@ -4,31 +4,23 @@ A Claude Code plugin marketplace containing self-learning tools.
 
 ## Installation
 
-```bash
-/plugin marketplace add your-username/retrospective-marketplace
-/plugin install retrospective@retrospective-marketplace
+Add the marketplace:
+
+```
+/plugin marketplace add derseitenschneider/retrospective-marketplace
 ```
 
-Or for local development:
+Install the plugin:
 
-```bash
-/plugin marketplace add /path/to/retrospective-marketplace
+```
+/plugin install retrospective@retrospective-marketplace
 ```
 
 ## Available Plugins
 
-### retrospective
-
-Analyzes coding sessions for user corrections and automatically updates project documentation (CLAUDE.md) to prevent future mistakes.
-
-**Features:**
-
-- Automatic trigger on session end (via Stop hook)
-- Smart detection of correction patterns
-- Concise, actionable documentation updates
-- No bloat - only genuine learnings
-
-See [plugins/retrospective/README.md](plugins/retrospective/README.md) for full documentation.
+| Plugin                                  | Description                                                                        |
+| --------------------------------------- | ---------------------------------------------------------------------------------- |
+| [retrospective](plugins/retrospective/) | Analyzes sessions for corrections and updates CLAUDE.md to prevent future mistakes |
 
 ## License
 
