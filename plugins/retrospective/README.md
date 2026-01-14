@@ -22,7 +22,6 @@ Or for local development:
 Analyzes coding sessions for user corrections and automatically updates project documentation (CLAUDE.md) to prevent future mistakes.
 
 **Features:**
-
 - Automatic trigger on session end (via Stop hook)
 - Smart detection of correction patterns
 - Concise, actionable documentation updates

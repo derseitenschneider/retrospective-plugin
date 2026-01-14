@@ -1,17 +1,16 @@
 {
   "name": "retrospective-marketplace",
   "owner": {
-    "name": "Brian Boy",
-    "email": "brian@morntag.com"
+    "name": "Brian"
   },
   "metadata": {
-    "description": "Self-learning plugin for Claude Code",
+    "description": "Self-learning plugins for Claude Code",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "retrospective",
-      "source": ".",
+      "source": "./plugins/retrospective",
       "description": "Analyzes sessions for corrections and updates CLAUDE.md to prevent future mistakes",
       "version": "1.0.0",
       "category": "productivity",

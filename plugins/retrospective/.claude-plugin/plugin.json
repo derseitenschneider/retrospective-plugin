@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Self-learning plugin that analyzes sessions for user corrections and updates CLAUDE.md to prevent future mistakes",
   "author": {
-    "name": "Brian Boy"
+    "name": "Brian"
   },
   "keywords": ["learning", "retrospective", "self-improvement", "documentation", "CLAUDE.md"],
   "license": "MIT",
