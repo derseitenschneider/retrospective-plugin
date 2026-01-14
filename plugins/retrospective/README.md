@@ -27,7 +27,7 @@ cp -r retrospective-plugin ~/.claude/plugins/
 ### Option 2: Via Marketplace (if published)
 
 ```
-/plugin marketplace add your-username/retrospective-plugin
+/plugin marketplace add derseitenschneider/retrospective-plugin
 /plugin install retrospective@your-marketplace
 ```
 
@@ -41,7 +41,7 @@ Add to your `.claude/settings.json`:
     {
       "source": {
         "source": "github",
-        "repo": "your-username/retrospective-plugin"
+        "repo": "derseitenschneider/retrospective-plugin"
       }
     }
   ]
