@@ -8,5 +8,4 @@
   "keywords": ["learning", "retrospective", "self-improvement", "documentation", "CLAUDE.md"],
   "license": "MIT",
   "commands": "./commands",
-  "hooks": "./hooks/hooks.json"
 }
