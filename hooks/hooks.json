@@ -1,0 +1,16 @@
+{
+  "description": "Hooks for the retrospective plugin - triggers learning analysis on session end",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Analyze if this session contained user corrections that should trigger a retrospective. Context: $ARGUMENTS\n\nLook for:\n1. User corrections (\"no\", \"wrong\", \"I told you\", \"you forgot\", \"actually...\")\n2. Repeated clarifications or frustration\n3. User reverting Claude's changes\n4. Claude apologizing for mistakes\n\nDo NOT trigger if:\n- Session was very short (< 5 exchanges)\n- No corrections were made\n- Corrections were about user preference changes, not Claude errors\n- stop_hook_active is true (already running retrospective)\n\nIf significant corrections were made that could benefit from documentation updates, respond with:\n{\"decision\": \"block\", \"reason\": \"Running /retrospective to analyze session learnings and update project documentation.\"}\n\nIf no significant corrections, respond with:\n{\"decision\": \"approve\", \"reason\": \"No actionable corrections to document.\"}",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
